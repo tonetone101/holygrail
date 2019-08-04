@@ -1,0 +1,15 @@
+.container9 {
+  background: blue;
+  text-align: center;
+  border-top: 1px solid black;
+  flex-basis: 100px;
+  align-items: center;
+}
+
+/* for border outline */
+footer {
+  font-size: 30px;
+  margin: 4px;
+  padding: 5px;
+  border-radius: 7px;
+}

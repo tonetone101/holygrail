@@ -1,0 +1,51 @@
+/* for border outline */
+main > * {
+  margin: 4px;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+main {
+  min-height: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+
+nav {
+  flex: 1 1 20%;
+  background: orange;
+  order: -1;
+}
+
+.box {
+  text-align: center;
+}
+
+aside {
+  flex: 1 1 20%;
+  background: yellow;
+  order: 1;
+}
+
+/* flex grow will adjut size when screen gets smaller */
+.middle {
+  background-color: #b20039;
+  flex: 5 0 60%;
+  order: 0;
+}
+
+/* when screen goes to 500px main flex-direction changes to colum
+  and takes up all availible space
+*/
+@media all and (max-width: 500px) {
+  main {
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  nav {
+    order: 0;
+  }
+}

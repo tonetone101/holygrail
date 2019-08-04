@@ -1,0 +1,25 @@
+header {
+  background: blue;
+  flex-basis: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  align-items: center;
+
+  /* for border outline */
+  margin: 4px;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s ease-out;
+}
+
+a:hover {
+  color: #3498db;
+}
